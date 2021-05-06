@@ -1,0 +1,26 @@
+.row.hero2  {
+   
+    background-color:#dbd8e3; 
+     
+   height: auto;
+  }
+
+  .row.hh  {
+   
+     background-color: #5c5470; 
+     height: 400px; 
+    justify-content: center;
+   }
+   .row.hh1  {
+    
+     background-color: #352f44;
+     height: 400px;
+    justify-content: center;
+   }
+   .container-fluid .row.hero2 .col-md-6.rh2
+{
+   justify-content: center;text-align: center;
+   margin-top: 20px;
+   text-align:end;
+    
+}

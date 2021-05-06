@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+.container-fluid
+{
+    justify-content: center;
+}
+.container-fluid .row.hero {
+    background-image: url("./pics/10.jpg"); 
+    background-color: #cccccc;
+    height: 400px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: rgb(252, 252, 252);
+    text-shadow: 2px 2px 4px #000000;
+    
+    font-family: 'Krona One', sans-serif;
+ justify-content: center;
+ margin-bottom: 30px;
+    
+  }
+  .container-fluid .row .col-12{
+   
+      text-align: center;
+  }
+  .container-fluid .row .col-6{
+      justify-content: center;
+      text-align: center;
+  }

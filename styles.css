@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+.navbar{
+    color:black;
+    background-color: black;
+}
+.container-fluid .row
+{
+    justify-content: center;
+}
+.container-fluid .row.ppp{
+    background-color :#fcdab7;
+    align-items: center;
+    
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    font-size: 14px;
+   
+}
+.container-fluid .row.ppp .para{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container-fluid .row.ppp .col{
+    margin-bottom: 10px;
+}
+.container-fluid .row .col .b1{
+    float:right;
+}
+.container-fluid .row .col .b1 .button{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 0;
+    font-weight:500;
+}
+.container-fluid .row .col .b2 .button{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:500;
+    border-radius: 0;
+}
+.container-fluid .row .col .b1 .button:hover{
+    background-color: black;
+}
+.container-fluid .row .col .b1 .button:active{
+    background-color:black;
+  box-shadow: 0 5px rgb(240, 240, 240);
+  transform: translateY(4px);
+}
+.container-fluid .row .col .b2 .button:hover{
+    background-color: black;
+}
+.container-fluid .row .col .b2 .button:active{
+    background-color:black;
+  box-shadow: 0 5px rgb(240, 240, 240);
+  transform: translateY(4px);
+}
+.container-fluid .row .col .b2{
+    float:left;
+}  
+.row.hero {
+    background-image: url("./pics/12.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 400px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic;
+    font-family: 'Pangolin', cursive;
+    text-align: center;
+  }
+  .container-fluid .row.menu{
+      background-color: white;
+      text-align: center;
+      font-variant: small-caps;
+      justify-content: center;
+      position: relative;
+  }
+  .container-fluid .row.menu .card-deck{
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+ 
+  .row.hero2 {
+    background-image: url("./pics/19.jpg");
+    background-color: #cccccc;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color: lightslategray;
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic;
+    font-family: 'Pangolin', cursive;
+    transition: 5s ease-in-out;
+    
+  }
+  .row.hero2 ::after{
+      animation-delay: 0.7s;
+      visibility: visible;
+  }
+  .row.hero2 .rh2{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+     margin-top: 10px;
+     padding: 10px 10px 10px 10px;
+  }

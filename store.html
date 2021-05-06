@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style1.css">
+    <title>Pizza Mania</title>
+  </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="/pics/2.jpeg" width="40" height="40" alt="Pizza Mania">
+        </a>
+        
+        <span class="material-icons ">
+          shopping_cart
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./store.html">Store</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li> -->
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menu
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./menu.html" >Pizza</a>
+                <a class="dropdown-item" href="./menu.html" >Beverage</a>
+                <a class="dropdown-item" href="./menu.html" >Dessert</a>
+               
+              </div>
+            </li>            
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid ">
+        <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner im">
+            <div class="carousel-item active">
+              <img class="d-block w-100 img-fluid"  src="./pics/w1.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 img-fluid" src="./pics/w1.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100 img-fluid" src="./pics/w1.png" alt="Third slide">
+            </div>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-6">
+            <img src="./pics/w2.png" class="img-fluid" height="630px" width="388px" alt="...">            
+          </div>
+          <div class="col-6">
+            <h1>
+              American Pizza
+            </h1>
+            <h3 id="demo1">0.00</h3>
+            <span class="material-icons" >
+              shopping_cart
+            </span>
+            <h4 id="demo">0</h4><h4 >Items in the bag</h4>
+            <button onclick="counter()" type="button" class="btn btn-outline-dark">Add Item</button>
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+            Go To Checkout
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Delivery Address</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-row">
+                      <div class="col-md-4 mb-3">
+                        <label for="validationDefault01">First name</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationDefault02">Last name</label>
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationDefaultUsername">Username</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                          </div>
+                          <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <label for="validationDefault03">City</label>
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationDefault04">State</label>
+                        <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <label for="validationDefault05">Zip</label>
+                        <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Agree to terms and conditions
+                        </label>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                  </form>                
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <!-- <h3>Description</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quos quia repellat quisquam. Libero nulla quae laudantium repellendus facere reiciendis, pariatur maxime vero, illo magnam tempore velit corporis, modi possimus minima recusandae! At omnis, amet maxime odio sapiente quaerat ullam doloremque illo, aliquid quam quos provident! Maiores sint soluta exercitationem?
+            </p>
+            <h3>Details</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex qui id nam pariatur doloribus ipsam nesciunt, saepe distinctio beatae veritatis optio velit molestiae voluptas facilis!
+            </p> -->
+            <h3></h3>
+          </div>
+        </div>
+      </div>
+     
+  
+</div>
+<script>
+  var n=0;
+  function counter() {
+    document.getElementById("demo").innerHTML = ++n;
+    var c=n*210;
+    
+    document.getElementById("demo1").innerHTML = c;
+    
+  }
+  </script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+
+
+                  
+
+
+
+</html>
+
+
+</body>
+</html>

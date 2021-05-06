@@ -1,0 +1,8 @@
+
+.container-fluid .row .col-6{
+    text-align-last: center;
+    text-align: -webkit-center;
+}
+.btn{
+    border-radius:0%;
+}
